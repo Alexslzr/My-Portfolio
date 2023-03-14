@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+/* CSS HEX 
+
+color1 title
+color 2 background title
+color3 nav color
+
+
+--ghost-white: #EDEDF6ff;
+--onyx: #31343Dff;
+--tiffany-blue: #92CCCDff;
+--paynes-gray: #4A5E7Bff;
+--carolina-blue: #81AEC2ff;
+*/
+
+
+header{
+    background: #31343Dff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 5px 50px 15px 0;
+}
+
+header h1{
+    margin-left: 5px;
+    padding: 0px 5px 0px 50px;
+    background-color: #92CCCDff;
+    color: #31343Dff;
+}
+
+nav ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+nav ul li a{
+    margin-right: 10px;
+    text-decoration: none;
+    list-style: none;
+    color: #92CCCDff;
+    border-bottom: 5px solid #92CCCDff;
+    padding: 0 8px 2px 8px;
+}
+
+.hero{
+    height: 200px;
+    color: #31343Dff;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200626/pngtree-abstract-futuristic-dual-color-blue-pink-neon-banner-image_340219.jpg");
+    background-size: cover;
+}
+
+.hero-title{
+    position: absolute;
+}
+
+.hero-title h2{
+    position: relative;
+    top: 140px;
+    left: 935px;
+    background-color: #92CCCDff;
+    padding: 5px;
+}
+
+
+
+main{
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #EDEDF6ff;
+}
+
+.section{
+    display: flex;
+    justify-content: space-betweengi;
+    margin-bottom: 10px;
+}
+
+.section h1{
+    color: #4A5E7Bff;
+    border-right: 4px solid #4A5E7Bff;
+}
+
+
+#contact ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-decoration: none;
+}
+
+#contact ul li{
+    margin-right: 50px;
+}
+
+.about-me p{
+    max-width: 200px;
+}
