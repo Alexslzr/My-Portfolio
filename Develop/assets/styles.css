@@ -82,27 +82,32 @@ main{
 
 .section{
     display: flex;
-    justify-content: space-betweengi;
     margin-bottom: 10px;
 }
 
 .section h1{
     color: #4A5E7Bff;
     border-right: 4px solid #4A5E7Bff;
+    min-width: 20%;
+    text-align: right;
+    padding-right: 10px;
 }
+
 
 
 #contact ul{
+    color: black;
     display: flex;
     list-style: none;
     align-items: center;
+    width: 80%;
+    justify-content: space-around;
+}
+
+#contact ul a{
+    border-bottom: ;
     text-decoration: none;
-}
-
-#contact ul li{
-    margin-right: 50px;
-}
-
-.about-me p{
-    max-width: 200px;
+    color: black;
+    border-bottom: 5px solid #92CCCDff;
+    padding: 0 8px 2px 8px;
 }
