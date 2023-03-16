@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -5,20 +6,8 @@
 
 body{
     font-family: sans-serif;
+    background-color: #EDEDF6ff;
 }
-/* CSS HEX 
-
-color1 title
-color 2 background title
-color3 nav color
-
-
---ghost-white: #EDEDF6ff;
---onyx: #31343Dff;
---tiffany-blue: #92CCCDff;
---paynes-gray: #4A5E7Bff;
---carolina-blue: #81AEC2ff;
-*/
 
 
 header{
@@ -30,6 +19,7 @@ header{
     padding: 5px 50px 15px 0;
 }
 
+
 header h1{
     margin-left: 5px;
     padding: 0px 5px 0px 50px;
@@ -37,10 +27,12 @@ header h1{
     color: #31343Dff;
 }
 
+
 nav ul{
     display: inline-flex;
     list-style: none;
 }
+
 
 nav ul li a{
     margin-right: 10px;
@@ -51,6 +43,7 @@ nav ul li a{
     padding: 0 8px 2px 8px;
 }
 
+
 .hero{
     height: 200px;
     color: #31343Dff;
@@ -58,42 +51,104 @@ nav ul li a{
     background-size: cover;
 }
 
+
 .hero-title{
-    position: absolute;
+    position: relative;
 }
 
+
 .hero-title h2{
-    position: relative;
-    top: 140px;
-    left: 935px;
+    position: absolute;
+    right: 60px;
+    top: 150px;
     background-color: #92CCCDff;
     padding: 5px;
 }
-
 
 
 main{
     padding: 20px 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-color: #EDEDF6ff;
 }
+
+
+#about-me p{
+    margin-left: 30px;
+    color: #31343Dff;
+}
+
 
 .section{
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
+
 
 .section h1{
     color: #4A5E7Bff;
     border-right: 4px solid #4A5E7Bff;
-    min-width: 20%;
+    min-width: 18%;
     text-align: right;
     padding-right: 10px;
 }
 
 
+.project{
+    color: #31343Dff;
+    margin-left: 30px;
+}
+
+
+.project img{
+    border: 7px solid #92CCCDff;
+    opacity: 0.5;
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
+
+.project img:hover{
+    opacity: 1;
+}
+
+
+.project div{
+    align-items: flex-start;
+    position: relative;
+    max-height: fit-content;
+    width:100%;
+}
+
+
+.projectTitle{
+    display: inline-block;
+    padding: 10px;
+    background-color: #92CCCDff;
+    position: absolute;
+    bottom: 100px;
+    left:6px;
+    max-height: 24px;
+    max-width: fit-content;
+}
+
+.work-container{
+    display: flex;
+    max-width: 100%;
+    position:relative;
+}
+
+.work-container div{
+    min-width: calc=(50%);
+}
+
+#calculator{
+    margin-right: 30px;
+}
+
+#studyGuide{
+    margin-right: 30px;
+}
 
 #contact ul{
     color: black;
@@ -104,10 +159,15 @@ main{
     justify-content: space-around;
 }
 
+
 #contact ul a{
-    border-bottom: ;
     text-decoration: none;
-    color: black;
-    border-bottom: 5px solid #92CCCDff;
+    color: #31343Dff;
+    border-bottom: 5px solid #4A5E7Bff;
     padding: 0 8px 2px 8px;
 }
+
+
+
+
+
