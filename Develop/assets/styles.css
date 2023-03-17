@@ -156,6 +156,7 @@ main{
 
 
 #contact ul{
+    margin-left: 30px;
     color: black;
     display: flex;
     list-style: none;
@@ -170,6 +171,15 @@ main{
     color: #31343Dff;
     border-bottom: 5px solid #4A5E7Bff;
     padding: 0 8px 2px 8px;
+}
+
+
+/*when screen smaller than 768px it will only show one project on each line*/
+@media screen and (max-width: 768px) {
+.project div{
+    display: flex;
+    flex-direction: column;
+}
 }
 
 
