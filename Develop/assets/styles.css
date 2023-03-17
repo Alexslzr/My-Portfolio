@@ -1,15 +1,17 @@
 
+/*first to delete all margin and padding */
 *{
     margin: 0;
     padding: 0;
 }
-
+/* would use the same font in the whole page*/
 body{
     font-family: sans-serif;
     background-color: #EDEDF6ff;
 }
 
 
+/* used a flexbox to align items on same line and space between to push all to the other size the nav bar */
 header{
     background: #31343Dff;
     display: flex;
@@ -27,13 +29,13 @@ header h1{
     color: #31343Dff;
 }
 
-
+/* decided to use an flexbox to help me align all of them in the same row*/
 nav ul{
-    display: inline-flex;
+    display: flex;
     list-style: none;
 }
 
-
+/* here is the stylyng og the items on nav bar, i quit the default underline and used another one*/
 nav ul li a{
     margin-right: 10px;
     text-decoration: none;
@@ -43,7 +45,7 @@ nav ul li a{
     padding: 0 8px 2px 8px;
 }
 
-
+/* i used this class to add a background image*/
 .hero{
     height: 200px;
     color: #31343Dff;
@@ -51,12 +53,12 @@ nav ul li a{
     background-size: cover;
 }
 
-
+/*here i declared the position relative to can make absolute his child*/
 .hero-title{
     position: relative;
 }
 
-
+/* used absolute positioning to move my name around the background image and be on the same place regarding the size of the screen*/
 .hero-title h2{
     position: absolute;
     right: 60px;
@@ -65,26 +67,20 @@ nav ul li a{
     padding: 5px;
 }
 
-
+/*changed the direction of the flexbox which cover all the main part*/
 main{
     padding: 20px 50px;
     display: flex;
     flex-direction: column;
 }
 
-
-#about-me p{
-    margin-left: 30px;
-    color: #31343Dff;
-}
-
-
+/*added a margin between all the sections inside the main*/
 .section{
     display: flex;
     margin-bottom: 30px;
 }
 
-
+/*gave style to the title of the sections */
 .section h1{
     color: #4A5E7Bff;
     border-right: 4px solid #4A5E7Bff;
@@ -93,21 +89,27 @@ main{
     padding-right: 10px;
 }
 
+#about-me p{
+    margin-left: 30px;
+    color: #31343Dff;
+}
+
 
 .project{
     color: #31343Dff;
     margin-left: 30px;
 }
 
-
+/*used to style the image of the projects*/
 .project img{
     border: 7px solid #92CCCDff;
     opacity: 0.5;
     aspect-ratio: 16/9;
     width: 100%;
+    height: 100%;
 }
 
-
+/*used to change the opacity when mouse hover the img*/
 .project img:hover{
     opacity: 1;
 }
@@ -120,7 +122,7 @@ main{
     width:100%;
 }
 
-
+/* used to position the title above the image of the projects*/
 .projectTitle{
     display: inline-block;
     padding: 10px;
@@ -132,6 +134,7 @@ main{
     max-width: fit-content;
 }
 
+/* used to separate the projects in diferent lines*/
 .work-container{
     display: flex;
     max-width: 100%;
@@ -142,6 +145,7 @@ main{
     min-width: calc=(50%);
 }
 
+/*used to give some space between the projects*/
 #calculator{
     margin-right: 30px;
 }
@@ -149,6 +153,7 @@ main{
 #studyGuide{
     margin-right: 30px;
 }
+
 
 #contact ul{
     color: black;
