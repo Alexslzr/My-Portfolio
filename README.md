@@ -1,4 +1,7 @@
 # My-Portfolio
+
+<img src="https://img.shields.io/badge/License-MIT-blue"></img>
+
 ## User Story
 
 ```
@@ -36,7 +39,9 @@ The following animation shows the web application's appearance and functionality
 ![portfolio demo](./assets/02-advanced-css-homework-demo.gif)
 
 
+## License
 
+This project utilizes an MIT License. [Read more](https://choosealicense.com/licenses/mit/)
 
 # GitHub
 https://github.com/Alexslzr/My-Portfolio
