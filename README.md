@@ -18,7 +18,7 @@ SO THAT I can review samples of their work and assess whether they're a good can
 
 The following animation shows the web application's appearance and functionality:
 
-![portfolio demo](./assets/02-advanced-css-homework-demo.gif)
+![portfolio demo](./Develop/assets/portfolio.png)
 
 
 ## License
@@ -27,8 +27,8 @@ This project utilizes an MIT License. [Read more](https://choosealicense.com/lic
 
 ## Links
 
-# GitHub
+GitHub: <br>
 https://github.com/Alexslzr/My-Portfolio
 
-# GitHub Pages
+Portfolio: <br>
 https://alexslzr.github.io/My-Portfolio/Develop/index.html

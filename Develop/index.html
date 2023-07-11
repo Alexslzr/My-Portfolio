@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/styles.css"/>
 </head>
 
 <body>
-    <header>
-        <h1>Alejandro Salazar</h1>
+    <header class="py-5 shadow-2xl">
+        <h1 class="mx-6 rounded-md p-3">Alejandro Salazar</h1>
         <nav> <!-- navigation bar-->
             <ul>
                 <li>
@@ -20,7 +21,7 @@
                     <a href="#work">Work</a> <!--used to point to work section-->
                 </li>
                 <li>
-                    <a href="#contact">Contact Me</a> <!--used to point to my contact section-->
+                    <a href="#contact" class="shadow-2xl">Contact Me</a> <!--used to point to my contact section-->
                 </li>
                 <li>
                     <a href="#">Resume</a>
@@ -28,32 +29,135 @@
             </ul>
         </nav>
     </header>
-    <div class="hero"> 
+    <div class="hero shadow-2xl"> 
         <div class="hero-title">
-            <h2>My Portfolio</h2>
+            <h2 class="rounded-md px-3 py-2 shadow-2xl">My Portfolio</h2>
         </div>
     </div>
     <main>  <!-- main section-->
         <div id="about-me" class="section">
             <h1>About <br/>Me</h1> <!-- used a br to look the same as the mockup-->
-            <p>I am Mechatronics Engineer with interest in software development, on my free times i study by myself and currently taking a Fullstack development bootcamp to improve my programing skills, what i also enjoy is hanging out with friends, go outside for a walk and play sports, my favorite is soccer which i play since i was 5, my favorite color is green and my favorite food is tacos de carne asada.</p>
+            <p>I am Mechatronics Engineer with interest in software development, on my free times i study by myself and i am currently taking a Fullstack development bootcamp in order to improve my programing skills, what i also enjoy is hanging out with friends, go outside for a walk and play sports, my favorite is soccer which i play since i was 5, my favorite color is green and my favorite food is tacos de carne asada.</p>
         </div>
         <div id="work" class="section"> <!-- all my projects-->
             <h1>Work</h1>
             <div class="project">
                 <div id="led-wall"> 
-                    <img src="https://img.freepik.com/free-vector/vector-led-wall-video-screen-with-dot-lights_107791-2792.jpg" alt="led-wall image"> <!--used a default image since i have not enough projects-->
+                    <a href="https://sales-tracker-t4p2-f41e20adc513.herokuapp.com/login" target="_blank">
+                        <img src="./assets/deployed.gif" alt="Sales tracker Gif"> <!--used a default image since i have not enough projects-->
+                    </a>
                     <div class="projectTitle">
-                        <h3>LED Wall</h3>
-                        <p>unknown tech</p> 
+                        <h3>Sales Tracker</h3>
+                        <p>Js/NodeJs/ExpressJs/Mysql/TailwindCss</p> 
                     </div>    
                 </div>
                 <div class="work-container" >
-                    <div id="calculator">
-                       <img src="https://www.quirks.com/storage/attachments/62fc4f3b881ef72637797da8/6306bd0495d29c7d1f0665e0/original/Statistical-calculator.png" alt="Calculator image">
+                    <div class="mr-7">
+                        <a href="https://pacific-bayou-28721-544ed386ada5.herokuapp.com/" target="_blank">
+                            <img src="./assets/techblog.png" alt="Tech-Blog image">
+                        </a>
                         <div class="projectTitle">
-                            <h3>Calculator</h3>
-                            <p>unknown tech</p>
+                            <h3>Tech-Blog</h3>
+                            <p>Js/NodeJs/ExpressJs/Mysql/BootstrapCss</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://enigmatic-fjord-82076.herokuapp.com/notes" target="_blank">  <!--used to point to my projects in a new tab-->
+                            <img src="./assets/notetaker.png" alt="Password Generator image">
+                        </a>
+                        <div class="projectTitle">
+                            <h3>Note Taker</h3>
+                            <p>ExpressJs/Js/NodeJs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-container" >
+                    <div class="mr-7">
+                        <a href="https://github.com/Alexslzr/Employee-Tracker" target="_blank">
+                            <img src="./assets/employeetracker.png" alt="Employee tracker image">
+                        </a>    
+                        <div class="projectTitle">
+                            <h3>Employee Tracker</h3>
+                            <p>Mysql/NodeJs/ExpressJs</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://github.com/Alexslzr/E-Commerce-Back-End" target="_blank">  <!--used to point to my projects in a new tab-->
+                            <img src="./assets/ecommerce.gif" alt="Password Generator image">
+                        </a>
+                        <div class="projectTitle">
+                            <h3>E-commerce backend</h3>
+                            <p>Mysql/NodeJs/ExpressJs/Sequalize</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-container" >
+                    <div class="mr-7">
+                        <a href="https://alexslzr.github.io/Weather-Dashboard/Develop/" target="_blank">
+                            <img src="./assets/Readmegenerator.png" alt="Readme app image">
+                        </a>
+                        <div class="projectTitle">
+                            <h3>Readme Generator</h3>
+                            <p>Mysql/NodeJs/ExpressJs</p>
+                        </div>
+                    </div>
+                    <div id="pwdGenerator">
+                        <a href="https://alexslzr.github.io/pwdGenerator/" target="_blank">  <!--used to point to my projects in a new tab-->
+                            <img src="./assets/svg.png" alt="Password Generator image">
+                        </a>
+                        <div class="projectTitle">
+                            <h3>SVG Logo Maker</h3>
+                            <p>NodeJs/ExpressJs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-container" >
+                    <div class="mr-7">
+                        <a href="https://alexslzr.github.io/Weather-Dashboard/Develop/">
+                            <img src="./assets/weather.png" alt="Weather app image">
+                        </a>
+                        <div class="projectTitle">
+                            <h3>Weather App</h3>
+                            <p>Js/HTML/TailwindCss/Third-party-API</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://rponce23.github.io/Project_1/" target="_blank">
+                            <img src="./assets/cinemapp.png" alt="Cinemapp image">
+                        </a>
+                         <div class="projectTitle">
+                             <h3>Cine Tracker</h3>
+                             <p>unknown tech</p>
+                         </div>
+                     </div>
+                </div>
+                <div class="work-container" >
+                    <div class="mr-7">
+                        <a href="https://alexslzr.github.io/CodeQuizz/Develop/" target="_blank">  <!--used to point to my projects in a new tab-->
+                            <img src="./assets/codequizz.gif" alt="Code quiz gif">
+                        </a>
+                        <div class="projectTitle">
+                            <h3>Code Quiz</h3>
+                            <p>HTML/CSS/JS</p>
+                        </div>
+                    </div>
+                    <div class="mr-7">
+                        <a href="https://alexslzr.github.io/Work-Day-Scheduler/Develop/" target="_blank"></a>
+                        <img src="assets/scheduler.gif" alt="Scheduler gif">
+                         <div class="projectTitle">
+                             <h3>Work Day Scheduler</h3>
+                             <p>Jquery/JS/HTML/CSS</p>
+                         </div>
+                     </div>
+                </div>
+                <div class="work-container" >
+                    <div class="mr-7">
+                        <a href="https://alexslzr.github.io/PasswordGenerator/Develop/">
+                            <img src="./assets/passwordgen.png" alt="password generator image">
+                        </a>    
+                        <div class="projectTitle">
+                            <h3>Password Generator</h3>
+                            <p>JS/HTML/CSS</p>
                         </div>
                     </div>
                     <div id="pwdGenerator">
@@ -61,13 +165,13 @@
                             <img src="./assets/pwdproject.PNG" alt="Password Generator image">
                         </a>
                         <div class="projectTitle">
-                            <h3>Password Generator</h3>
-                            <p>HTM/CSS/JavaScript</p>
+                            <h3>Pwd Generator</h3>
+                            <p>HTML/CSS/JavaScript</p>
                         </div>
                     </div>
                 </div>
                 <div class="work-container">
-                    <div id="studyGuide">
+                    <div class="mr-7">
                         <a href="https://alexslzr.github.io/prework-study-guide/" target="_blank"> <!--used to point to my projects in a new tab-->
                             <img src="./assets/studyguide.PNG" alt="Study Guide image">                    
                         </a>
@@ -81,7 +185,7 @@
                            <img src="./assets/Counter of people.PNG" alt="Counter of people image">
                         </a>
                         <div class="projectTitle">
-                            <h3>Counter of People</h3>
+                            <h3>Counter of people</h3>
                             <p>HTML/CSS/JavaScript</p>
                         </div>
                     </div>
